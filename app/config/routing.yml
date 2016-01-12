@@ -1,0 +1,3 @@
+shy_form:
+    resource: "@ShyFormBundle/Resources/config/routing.yml"
+    prefix:   /

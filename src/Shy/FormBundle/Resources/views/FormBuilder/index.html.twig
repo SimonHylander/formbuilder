@@ -1,0 +1,208 @@
+{% extends "ShyFormBundle::layout.html.twig" %}
+
+{% block content %}
+
+<style>
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #333;
+        background-color: #fff;
+    }
+
+    .form-default
+    input,
+    button,
+    select,
+    textarea {
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    textarea.form-default {
+        height: auto;
+    }
+
+    .form-default-label {
+        display: inline-block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-default {
+        display: block;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        color: #555;
+        background-color: #fff;
+        border: 1px solid #cccccc;
+        border-radius: 2px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        margin-bottom: 10px;
+    }
+
+    .form-default-btn {
+        display: inline-block;
+        background-color: #fff;
+        color: #333;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        font-weight: normal;
+        text-align: center;
+        cursor: pointer;
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .form-default-btn:hover {
+      color: #333333;
+      background-color: #f2f2f2;
+      border-color: #adadad;
+    }
+
+    .checkbox-vertical label {
+        display: block;
+    }
+
+    .column {
+        float: left;
+        margin: 0;
+        width: 33%;
+    }
+
+    .container {
+        width: 900px;
+        margin: 0 auto;
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        position: relative;
+    }
+
+    .content {
+        margin: 10px 0 10px 20px;
+    }
+
+    .row {
+        width: 100%;
+        display: block;
+    }
+
+    .row:after {
+        clear:both;
+        content: ".";
+    }
+
+    .col {
+        width: 25%;
+        float: left;
+    }
+
+</style>
+
+<div class="container">
+    <div class="content">
+
+        {{ form_start(form) }}
+
+
+        {{ form_end(form) }}
+
+
+        {#<div class="row">
+            <div class="col">
+                <label class="form-default-label">Email</label>
+                <input type="text" class="form-default" placeholder="Email">
+            </div>
+            <div class="col">
+                <label class="form-default-label">Email</label>
+                <input type="text" class="form-default" placeholder="Email">
+            </div>
+
+            <div class="col">
+                <label class="form-default-label">Email</label>
+                <input type="text" class="form-default" placeholder="Email">
+            </div>
+
+            <div class="col">
+                <label class="form-default-label">Email</label>
+                <input type="text" class="form-default" placeholder="Email">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label class="form-default-label">Email</label>
+                <input type="text" class="form-default" placeholder="Email">
+            </div>
+            <div class="col">
+                <label class="form-default-label">Email</label>
+                <input type="text" class="form-default" placeholder="Email">
+            </div>
+
+            <div class="col">
+                <label class="form-default-label">Email</label>
+                <input type="text" class="form-default" placeholder="Email">
+            </div>
+
+            <div class="col">
+                <label class="form-default-label">Email</label>
+                <input type="text" class="form-default" placeholder="Email">
+            </div>
+        </div>#}
+    </div>
+</div>
+
+{#
+<div class="container">
+    <div class="content">
+            <form>
+                <div class="row">
+                    <div class="row-col">
+                        <label class="form-default-label">Email</label>
+                        <input type="text" class="form-default" placeholder="Email">
+                    </div>
+
+                    <div class="row-col">
+                        <label class="form-default-label">Email</label>
+                        <input type="text" class="form-default" placeholder="Email">
+                    </div>
+
+                    <div class="row-col">
+                        <label class="form-default-label">Email</label>
+                        <input type="text" class="form-default" placeholder="Email">
+                    </div>
+                </div>
+
+                <label class="form-default-label">Email</label>
+                <input type="text" class="form-default" placeholder="Email">
+
+                <label class="form-default-label">Password</label>
+                <input type="password" class="form-default" placeholder="Password">
+            </form>
+        {{ form_start(form) }}{{ form_end(form) }}
+    </div>
+</div>#}
+
+{#
+<div class="container">
+    <h2>Vertical (basic) form</h2>
+    <form role="form">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox"> Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>
+#}
+
+{% endblock %}

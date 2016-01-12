@@ -1,0 +1,8 @@
+services:
+#    shy_form.example:
+#        class: Shy\Bundle\FormBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+#form_service:
+    #class:     Shy\FormBundle\Services\FormService
+    #arguments: ["@doctrine"]
